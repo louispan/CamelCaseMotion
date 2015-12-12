@@ -195,7 +195,7 @@ function! s:Move(direction, count, mode)
     endif
     let [l:line5, l:col5] = s:GetClosest(l:direction, l:line3, l:col3, l:line4, l:col4)
     call cursor(l:line5, l:col5)
-    echom a:direction . ':' . a:count . ':' a:mode ':' . l:direction . ' a ' . l:line1 . ':' . l:col1 . ' b ' . l:line2 . ':' . l:col2 . ' c ' . l:line3 . ':' . l:col3 . ' d ' . l:line4 . ':' . l:col4 . ' e ' . l:line5 . ':' . l:col5
+    " echom a:direction . ':' . a:count . ':' a:mode ':' . l:direction . ' a ' . l:line1 . ':' . l:col1 . ' b ' . l:line2 . ':' . l:col2 . ' c ' . l:line3 . ':' . l:col3 . ' d ' . l:line4 . ':' . l:col4 . ' e ' . l:line5 . ':' . l:col5
     let l:i = l:i + 1
   endwhile
 endfunction
