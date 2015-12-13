@@ -61,7 +61,7 @@ let s:pattern_begin .= '\|[[:punct:]]\{2,}'
 " lowercase after a nonalpha, ie not in Camel
 let s:pattern_begin .= '\|\a\@<!\l'
 " anything prefixed by whitespace
-let s:pattern_begin .= '\|\%(\s\|$\)\zs\S'
+" let s:pattern_begin .= '\|\%(\s\|$\)\zs\S'
 let s:pattern_begin .= '\|\S\@<!\S'
 " any punction before a whitespace
 let s:pattern_begin .= '\|[[:punct:]]\+\%(\s\|$\)'
